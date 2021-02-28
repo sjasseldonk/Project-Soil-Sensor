@@ -14,8 +14,8 @@ from sqlalchemy import select, Table, MetaData
 # For connection to db
 db_user = 'newuser'
 db_pwd = 'newpassword'
-db_host = '192.168.1.131'
-db_port = '3306'
+db_host = 'xxx.xxx.x.xxx'
+db_port = 'xxxx'
 db_name = 'tuin_db'
 
 def db_setup():

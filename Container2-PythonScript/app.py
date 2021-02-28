@@ -12,12 +12,12 @@ import sqlalchemy as db
 from sqlalchemy import insert, select, Table
 
 broker_adress = "xxx.xxx.x.xx"
-broker_port = 1883
+broker_port = xxxx
 
 db_user = 'newuser'
 db_pwd = 'newpassword'
-db_host = '192.168.1.131'
-db_port = '3306'
+db_host = 'xxx.xxx.x.xxx'
+db_port = 'xxxx'
 db_name = 'tuin_db'
 
 values_to_insert = []
@@ -71,9 +71,9 @@ def on_message(client, userdata, msg):
 
 
 def weather_setup():
-    weather_access = YahooWeather(APP_ID="1syh9H7g",
-                     api_key="dj0yJmk9UjAzQTV4RDVoZFVHJmQ9WVdrOU1YTjVhRGxJTjJjbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTc3",
-                     api_secret="b901246a5fd186f4bb9a8e947dacb85e85afaed9")
+    weather_access = YahooWeather(APP_ID="YourID",
+                     api_key="YourKey",
+                     api_secret="YourSecret")
     
     weather_access.get_yahoo_weather_by_city("Erp", Unit.celsius)
     weather = weather_access.condition.text
